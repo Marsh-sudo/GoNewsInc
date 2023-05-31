@@ -31,7 +31,7 @@ func (s *Search) IsLastPage() bool {
 	return s.NextPage >= s.TotalPages
 }
 
-func (s *Search) CurrentPage() {
+func (s *Search) CurrentPage() int{
 	if s.NextPage == 1 {
 		return s.NextPage
 	}
