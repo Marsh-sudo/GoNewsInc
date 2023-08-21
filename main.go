@@ -54,7 +54,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func searchHandler(newsapi *news.Client) http.HandlerFunc {
-	return func (w http.ResponseWriter, r*http.Request)  {
+	return func (w http.ResponseWriter, r*http.Request)  {   //returns an anonymous function which satisfies the http.HandlerFunc type.
 		u, err := url.Parse(r.URL.String())
 		if err != nil {
 			http.Error(w,err.Error(),http.StatusInternalServerError)
@@ -109,7 +109,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "8000"
 	}
 	apiKey := os.Getenv("NEWS_API_KEY")
 	if apiKey == "" {
