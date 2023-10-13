@@ -1,0 +1,18 @@
+apiVersion: skaffold/v2beta16
+kind: Config
+build:
+  tagPolicy:
+    customTemplate:
+     template: "latest"
+  artifacts:
+  - image: go-test-arti
+    context: ./
+profiles:
+- name: dev
+  deploy:
+    helm:
+      releases:
+      - name: devrelease
+        chartPath: helm/dev
+        valuesFiles:
+         - helm/dev/values.yaml
