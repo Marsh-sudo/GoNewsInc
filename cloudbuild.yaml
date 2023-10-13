@@ -18,7 +18,6 @@ steps:
   - -c
   - |
     gcloud config set deploy/region ${_REGION}
-    sed -i s/PROJECT_ID/devops1-395401/g deploy/*
     gcloud deploy apply --file clouddeploy.yaml
     gcloud deploy releases create test1-deploy \
                         --delivery-pipeline my-gke-demo-app-1 \
