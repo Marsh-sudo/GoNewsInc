@@ -25,7 +25,7 @@ steps:
                         --build-artifacts /workspace/artifacts.json \
 artifacts:
   objects:
-    location: 'us-central1.deploy-artifacts.devops1-395401.appspot.com'
+    location: 'gs://us-central1.deploy-artifacts.devops1-395401.appspot.com'
     paths:
     - '/workspace/artifacts.json'
 options:
