@@ -9,7 +9,7 @@ label: goApp
 
 image:
   name: go-test-arti
-  repository: us-central1-docker.pkg.dev/devops1-395401/test-docker
+  repository: us-central1-docker.pkg.dev/peak-seat-395401/test1-go
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
