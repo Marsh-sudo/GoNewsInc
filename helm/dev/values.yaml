@@ -8,8 +8,8 @@ replicaCount: 1
 label: goApp
 
 image:
-  name: go-test-arti
-  repository: us-central1-docker.pkg.dev/peak-seat-395401/test1-go
+  name: test-go
+  repository: us-central1-docker.pkg.dev/buildcloud/go-test
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
