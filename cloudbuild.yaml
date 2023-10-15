@@ -20,7 +20,7 @@ steps:
     gcloud config set deploy/region ${_REGION}
     gcloud deploy releases create test1-deploy \
                         --delivery-pipeline my-gke-demo-app-1 \
-                        --image=test-go=gcr.io/go-test/test-go \
+                        --images=test-go=gcr.io/go-test/test-go \
 artifacts:
   objects:
     location: 'gs://us-central1.deploy-artifacts.peak-seat-395401.appspot.com'
