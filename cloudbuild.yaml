@@ -9,7 +9,7 @@ steps:
   - |
     # Build and push images
     skaffold build --file-output=/workspace/artifacts.json \
-                   --default-repo=${_REGION}-docker.pkg.dev/buildcloud/go-test \
+                   --default-repo=us-west2-docker.pkg.dev/clouddeployment-402300/quickstart-docker-repo \
                    --push=true
 - name: 'google/cloud-sdk:latest'
   entrypoint: 'sh'
@@ -20,10 +20,10 @@ steps:
     gcloud config set deploy/region ${_REGION}
     gcloud deploy releases create test1-deploy \
                         --delivery-pipeline my-gke-demo-app-1 \
-                        --images=test-go=gcr.io/go-test/test-go \
+                        --build-artifacts /workspace/artifacts.json
 artifacts:
   objects:
-    location: 'gs://us-central1.deploy-artifacts.peak-seat-395401.appspot.com'
+    location: 'gs://clouddeployment-402300-gceme-artifacts/'
     paths:
     - '/workspace/artifacts.json'
 options:

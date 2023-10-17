@@ -26,5 +26,5 @@ metadata:
   name: qsprod
 description: production cluster
 gke:
-  cluster: projects/peak-seat-395401/locations/us-central1/clusters/quickstart-cluster-qsprod
+  cluster: projects/peak-seat-395401/locations/us-east1/clusters/quickstart-cluster-qsprod
 
