@@ -2,7 +2,7 @@ apiVersion: skaffold/v2beta16
 kind: Config
 build:
   artifacts:
-  - image: test-go
+  - image: quickstart-image
     context: ./
 deploy:
  helm:
