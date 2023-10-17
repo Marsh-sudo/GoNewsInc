@@ -8,8 +8,8 @@ replicaCount: 1
 label: goApp
 
 image:
-  name: test-go
-  repository: us-central1-docker.pkg.dev/buildcloud/go-test
+  name: quickstart-image
+  repository: us-west2-docker.pkg.dev/clouddeployment-402300/quickstart-docker-repo
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
