@@ -21,7 +21,7 @@ steps:
     gcloud deploy releases create test3-deploy \
                         --project=clouddeployment-402300 \
                         --region=us-central1 \
-                        --delivery-pipeline=my-gke-demo-app-1 \
+                        --delivery-pipeline=my-gke-demo-app \
                         --build-artifacts /workspace/artifacts.json
   objects:
     location: 'gs://clouddeployment-402300-gceme-artifacts/'
