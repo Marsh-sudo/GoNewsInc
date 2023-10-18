@@ -18,10 +18,11 @@ steps:
   - -c
   - |
     gcloud config set deploy/region ${_REGION}
-    gcloud deploy releases create test2-deploy \
-                        --delivery-pipeline my-gke-demo-app-1 \
+    gcloud deploy releases create test3-deploy \
+                        --project=clouddeployment-402300 \
+                        --region=us-central1 \
+                        --delivery-pipeline=my-gke-demo-app-1 \
                         --build-artifacts /workspace/artifacts.json
-artifacts:
   objects:
     location: 'gs://clouddeployment-402300-gceme-artifacts/'
     paths:

@@ -13,8 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        repository: us-west2-docker.pkg.dev/clouddeployment-402300/quickstart-docker-repo
-        image: quickstart-image
+        image: my-app-image
         ports:
         - containerPort: 8040
 
