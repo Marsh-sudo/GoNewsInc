@@ -26,5 +26,5 @@ metadata:
   name: qsprod
 description: production cluster
 gke:
-  cluster: projects/clouddeployment-402300/locations/us-east1/clusters/quickstart-cluster-qsprod
+  cluster: projects/clouddeployment-402300/locations/us-central1/clusters/quickstart-cluster-qsprod
 
