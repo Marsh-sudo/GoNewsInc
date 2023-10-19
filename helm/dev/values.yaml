@@ -9,9 +9,9 @@ label: goApp
 
 image:
   name: quickstart-image
-  repository: us-west2-docker.pkg.dev/clouddeployment-402300/quickstart-docker-repo
+  repository: us-central1-docker.pkg.dev/clouddeployment-402300/cicd-sample-repo/quickstart-image
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: 8ec4f06
 
 
   # capabilities:

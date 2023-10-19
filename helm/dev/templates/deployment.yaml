@@ -15,8 +15,12 @@ spec:
         app: {{ .Values.label }}
     spec:
       containers:
-        - name: {{ .Values.image.name }}
+        - name: mygoapp
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          resources:
+          limits:
+            memory: "64Mi"
+            cpu: "200m"
           ports:
             - name: http
               containerPort: {{ .Values.service.containerPort }}
