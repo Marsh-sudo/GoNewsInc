@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: my-app-image
+        image: quickstart-image
         resources:
           limits:
             memory: "64Mi"
